@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-
+const mongoose = require("mongoose");
 // User Schema
 const eventSchema = new mongoose.Schema(
   {
@@ -30,5 +29,4 @@ const eventSchema = new mongoose.Schema(
 );
 
 const Events = mongoose.model("Events", eventSchema);
-
-export default Events;
+module.exports = { Events };

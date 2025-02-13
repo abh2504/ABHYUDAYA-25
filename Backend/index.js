@@ -1,6 +1,6 @@
-import express from "express";
-import mongoose from "mongoose";
-import eventRoter from "./Routers/Events.js";
+const express = require("express");
+const mongoose = require("mongoose");
+const eventRouter = require("./Routers/Events"); 
 
 // ..................................................................
 // Connect()
@@ -11,23 +11,19 @@ mongoose
   })
   .catch((e) => console.log(e));
 
-
 const app = express();
 
 //  1st route
-
 app.get("/", (req, res) => {
   res.send("Ping from the server !");
 });
 
-app.use('/events', eventRoter); // Aditi
-// Vinayak -> USers `
+app.use("/events", eventRouter); // Aditi
+// Vinayak -> Users
 
 // app.use('/email', ) -> Chandan
 
-
-
-//....................................................................
+// ....................................................................
 app.listen(8000, () => {
   console.log("Server Running at Port " + 8000);
 });

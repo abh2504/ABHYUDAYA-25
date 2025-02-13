@@ -1,8 +1,8 @@
-import express from "express";
-import { getAllEvents } from "../Controllers/Events.js";
+const express = require("express");
+const { getAllEvents } = require("../Controllers/Events");
 const eventRoter = express.Router();
 
 eventRoter.get("/", getAllEvents);
-//  post ->events add 
+//  post ->events add
 
-export default eventRoter;
+module.exports = eventRoter;
