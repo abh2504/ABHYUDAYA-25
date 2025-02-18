@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const eventRouter = require("./Routers/Events"); 
+const eventRouter = require("./Routers/Events");
 
 // ..................................................................
 // Connect()
@@ -12,7 +12,7 @@ mongoose
   .catch((e) => console.log(e));
 
 const app = express();
-
+app.use(express.json());
 //  1st route
 app.get("/", (req, res) => {
   res.send("Ping from the server !");
