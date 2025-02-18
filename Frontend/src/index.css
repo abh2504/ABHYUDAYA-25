@@ -1,0 +1,44 @@
+
+:root {
+  --primary-color: #0e1830;
+    --secondary-color: #f88;
+    --tertiary-color: #000;
+    --start-backgroundbg: #163272;
+    --button-bg: #a41045;
+    --loader-bg: #022962;
+    --muted: #7d7e80;
+    --color1: #fff;
+    --color2: #000;
+    --color3: #e7e7e7;
+    --color4: #1e1e46;
+    --color5: #0385b9;
+    --backgroundQuery: #451952;
+    --headingQuery: #efc36a;
+    --headingMerch: #efc36a;
+    --headingColorCard: #efc36a;
+    --pMerch: #fff;
+    --spanColorCard: #fff;
+    --listMerch: #fff;
+    --bgColorCard: #f8f9fa;
+    --cardColor: #efc36a;
+    --colorThreeContact: #7a316f;
+    --colorFiveContact: #ebbd60;
+    --contactWhite: #fff;
+    --mainHeadingContactUs: #efc36a;
+    --bgContactUs: #343a40;
+    --teamHeading: #f5f5f5;
+    --firstColorSidebarContact: #f88;
+    --secondColorSidebarContact: #f88;
+    --thirdColorSidebarContact: #f88;
+    --fourthColorSidebarContact: #f88;
+    --fifthColorSidebarContact: #f88;
+    --greyColorSidebarContact: #fff;
+    --contactUsSvgFill: #fff;
+    --nameColorContact: #fff;
+    --schedule-color: #f1faee;
+    --sponsor-color: #f886;
+    --bg-overlay-color: #0d0c12b3;
+    --organizer-name: #22316c;
+}
+/* src/index.css */
+
