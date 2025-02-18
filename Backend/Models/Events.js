@@ -20,10 +20,55 @@ const eventSchema = new mongoose.Schema(
     // EventType : ONline/Offline
     // price:
     // ParticipationFee
-
-    rules: {
+    category: {
+      type: String,
       required: true,
-    }, // description -> array of strings -> point wise rules
+      enum: ["Music", "Dance", "Dramatics", "Fine Arts", "Poetry", "Other"],
+    },
+    eventType: {
+      type: String,
+      required: true,
+      enum: ["Online", "Offline"],
+    },
+    teamType: {
+      type: String,
+      required: true,
+      enum: ["Solo", "Duo", "Team"],
+    },
+    images: [
+      {
+        type: String, // URLs of images
+      },
+    ],
+    uniqueId: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    noOfRounds: {
+      type: Number,
+      required: true,
+      min: 1,
+    },
+    prize: {
+      type: Number,
+      required: false,
+      default: 0,
+    },
+    participationFee: {
+      type: Number,
+      required: false,
+      default: 0,
+    },
+    rules: {
+      type: [String],
+      required: true,
+    },
+    registrationLink: {
+      type: String,
+      required: false,
+    },
+    // description -> array of strings -> point wise rules
   },
   { timestamps: true }
 );
