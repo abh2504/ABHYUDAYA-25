@@ -13,7 +13,6 @@
     "bootstrap": "^5.3.3",
     "clsx": "^2.1.1",
     "motion": "^12.4.3",
-    "node-sass": "^9.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.15.1",
